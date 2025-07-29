@@ -482,6 +482,122 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+/* Books Page Specifics */
+.book-section-category {
+    margin-bottom: 3rem; /* Space between English and Other Languages sections */
+}
+
+.book-section-category .section-title {
+    margin-bottom: 1.5rem; /* Adjust title margin for sub-sections */
+}
+
+/* Ensure books list stacks vertically, overriding any previous grid settings if applicable */
+.books-list {
+    display: flex; /* Changed from grid to flex for single column */
+    flex-direction: column;
+    gap: 2.5rem; /* Space between individual book cards */
+    max-width: 900px; /* Max width for book cards */
+    margin: 0 auto;
+}
+
+.book-card {
+    display: flex;
+    align-items: center; /* Vertically align content within the card */
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensure card is wide */
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 120px; /* Fixed width for the book cover */
+    height: 180px; /* Fixed height for the book cover */
+    margin-right: 2rem; /* Space between image and text */
+    border-radius: 5px;
+    object-fit: cover; /* Ensure image covers the area, cropping if necessary */
+    border: 1px solid var(--border-color);
+}
+
+.book-details {
+    flex-grow: 1; /* Allow text content to take remaining space */
+}
+
+.book-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.book-details p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.book-details p strong {
+    color: var(--secondary-color);
+}
+
+.buy-button {
+    display: inline-flex; /* Use flex for icon and text alignment */
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: var(--link-hover-color);
+}
+
+.buy-button i {
+    font-size: 1.1rem; /* Size for the shopping cart icon */
+    color: inherit; /* Inherit color from the button text */
+}
+
+/* Media Queries for Responsiveness on Books Page */
+@media (max-width: 768px) {
+    .book-card {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        padding: 1.2rem;
+    }
+
+    .book-cover {
+        margin-right: 0;
+        margin-bottom: 1.5rem; /* Space below image when stacked */
+        width: 100px; /* Adjust size for mobile */
+        height: 150px; /* Adjust size for mobile */
+    }
+
+    .book-details h3 {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .book-details p {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .buy-button {
+        padding: 0.6rem 1.2rem; /* Adjust button padding for mobile */
+        font-size: 0.9rem; /* Adjust button font size for mobile */
+    }
+}
 
 /* Media Queries for Social Links Responsiveness */
 @media (max-width: 768px) {
