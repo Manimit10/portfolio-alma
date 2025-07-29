@@ -428,6 +428,78 @@ body {
     margin-top: 2rem;
 }
 
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons */
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s, transform 0.3s;
+    font-size: 0.9rem; /* Smaller text for channel name */
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.social-links a i {
+    font-size: 2.5rem; /* Larger icon size */
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color); /* Default icon color */
+    transition: color 0.3s;
+}
+
+.social-links a:hover i {
+    color: var(--primary-color); /* Icon color on hover */
+}
+
+.social-links span {
+    display: block; /* Ensure the text is on a new line */
+}
+
+.note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+/* Update to General Lists - Renamed original .contact-list */
+.position-list, .journal-list, .contact-list-items, .books-list, .experience-list, .workshop-list {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media Queries for Social Links Responsiveness */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: row; /* Keep as row, but allow wrap */
+        justify-content: center;
+        gap: 1rem; /* Adjust gap for smaller screens */
+    }
+
+    .social-links a {
+        font-size: 0.8rem; /* Smaller text for channel name on mobile */
+    }
+
+    .social-links a i {
+        font-size: 2rem; /* Adjust icon size for mobile */
+    }
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar {
