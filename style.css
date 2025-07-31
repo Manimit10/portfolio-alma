@@ -681,3 +681,41 @@ body {
         left: 15px;
     }
 }
+
+
+
+/* only contact.html TODO: Reorganize all css later */
+/* References Section Specifics */
+.reference-item {
+    display: flex; /* Enable flexbox for alignment of logo and text */
+    align-items: center; /* Vertically center logo with text */
+    gap: 1.5rem; /* Space between logo and details */
+}
+
+.university-logo {
+    width: 70px; /* Fixed width for the logo */
+    height: 70px; /* Fixed height for the logo */
+    border-radius: 50%; /* Make logos circular */
+    object-fit: contain; /* Ensure logo fits without cropping */
+    border: 1px solid var(--border-color); /* Subtle border for logos */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.reference-details {
+    flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .reference-item {
+        flex-direction: column; /* Stack logo and details vertically */
+        text-align: center;
+        gap: 0.8rem; /* Adjust gap when stacked */
+    }
+
+    .university-logo {
+        margin-bottom: 0.5rem; /* Space below logo when stacked */
+        width: 50px; /* Slightly smaller logo on mobile */
+        height: 50px; /* Slightly smaller logo on mobile */
+    }
+}
