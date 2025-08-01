@@ -7,9 +7,11 @@
     --border-color: #e9ecef;
     --link-color: #0d6efd;
     --link-hover-color: #0a58ca;
+    --research-tag-bg: #e6f2ff;
+    --research-tag-color: #0066cc;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
     --primary-color: #20c997;
     --secondary-color: #adb5bd;
     --text-color: #e9ecef;
@@ -24,6 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 body {
@@ -31,7 +34,6 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -158,7 +160,7 @@ body {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--card-background);
 }
 
 .btn-primary:hover {
@@ -173,7 +175,7 @@ body {
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--card-background);
 }
 
 /* Common Section Styling */
@@ -390,7 +392,7 @@ body {
 }
 
 .close-btn {
-    color: #aaa;
+    color: var(--secondary-color);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -405,7 +407,7 @@ body {
 
 .btn-read-more {
     background: var(--primary-color);
-    color: #fff;
+    color: var(--card-background);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -721,15 +723,6 @@ body {
 }
 /* only for research publication page */
 /* Core Variables (keep these if you have them, otherwise add them) */
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --text-color: #333;
-    --background-color: #f8f9fa;
-    --card-background: #ffffff;
-    --border-color: #e9ecef;
-    --link-hover-color: #0056b3;
-}
 
 /* Base Styling (keep these if you have them) */
 body {
@@ -802,8 +795,8 @@ h1 {
     gap: 10px;
 }
 .paper-category {
-    background-color: #e6f2ff;
-    color: #0066cc;
+    background-color: var(--research-tag-bg);
+    color: var(--research-tag-color);
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -875,6 +868,8 @@ h1 {
 }
 [data-theme='dark'] .filter-dropdowns select {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e9ecef'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    --research-tag-bg: #003366;
+    --research-tag-color: #99ccff;
 }
 .filter-dropdowns select:hover {
     border-color: var(--primary-color);
