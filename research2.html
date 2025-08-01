@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="List of Dr. Aida Mehrad's scientific publications, research papers, and editorial experience.">
+    <meta name="keywords" content="Aida Mehrad, research, publications, scientific journals, organizational behavior, leadership, management, psychology">
+    <title>Dr. Aida Mehrad | Research</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Dr. Aida Mehrad</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">&#9728;</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="publications-section" class="content-section">
+            <h1 class="section-title">Scientific Publications</h1>
+
+            <div class="filter-controls">
+                <input type="text" id="search-bar" placeholder="Search by title or author..." aria-label="Search publications">
+
+                <div class="filter-dropdowns">
+                    <select id="year-filter" aria-label="Filter by Year">
+                        <option value="">All Years</option>
+                        </select>
+                    <select id="category-filter" aria-label="Filter by Category">
+                        <option value="">All Categories</option>
+                        </select>
+                </div>
+            </div>
+
+            <div id="publications-grid" class="publications-grid">
+                </div>
+
+            <div id="pagination-controls" class="pagination-controls">
+                </div>
+        </section>
+
+        <section id="editorial-experience" class="content-section">
+            <h2 class="section-title">Experience as Editor and Reviewer</h2>
+            <p>Dr. Mehrad has served as an editor and reviewer for numerous scientific journals since 2015.</p>
+            <ul class="journal-list">
+                <li>Journal of Social Sciences Research (JSSR)</li>
+                <li>International Journal of Educational Policy Research and Review</li>
+                <li>Academy of Management Executive</li>
+                <li>Education Research Journal</li>
+                <li>International Journal of Social Science Research (Macrothink Institute)</li>
+                <li>Quaderns de Psicología. International Journal of Psychology</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Dr. Aida Mehrad. All Rights Reserved.</p>
+    </footer>
+
+    <script src="research.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
