@@ -926,3 +926,105 @@ h1 {
         width: 100%;
     }
 }
+/* Teaching Page Specifics */
+/* Subtitle styling for the page sections */
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+/* Teaching Table Section */
+.teaching-table-container {
+    overflow-x: auto;
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+#teaching-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ensures table is readable on smaller screens */
+}
+
+#teaching-table th, #teaching-table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#teaching-table th {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#teaching-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#teaching-table tbody tr:hover {
+    background-color: var(--background-color);
+}
+
+/* University Cards Section */
+#university-section {
+    margin-top: 3rem;
+}
+
+.university-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.university-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.university-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.university-logo-link {
+    display: block;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.university-logo-link:hover {
+    transform: scale(1.05);
+}
+
+.university-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid var(--border-color);
+}
