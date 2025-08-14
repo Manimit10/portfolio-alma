@@ -974,57 +974,108 @@ h1 {
 }
 
 /* University Cards Section */
-#university-section {
-    margin-top: 3rem;
-}
+/* ================================== */
+/* New Teaching Page Specific Styles */
+/* ================================== */
 
-.university-cards-grid {
+/* Main grid container for the teaching cards */
+.teaching-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.university-card {
+/* Styles for an individual teaching card */
+.teaching-card {
     background: var(--card-background);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.university-card:hover {
+/* Hover effect on the card */
+.teaching-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-.university-card h3 {
-    font-size: 1.2rem;
+/* Left side of the card with text details */
+.teaching-card-details {
+    flex-grow: 1;
+    margin-right: 1.5rem;
+}
+
+/* University/Institute Name */
+.teaching-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.university-logo-link {
+/* Subject name */
+.teaching-card .card-subject {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* "Since Year" text */
+.teaching-card .since-year {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin: 0.25rem 0 0;
+}
+
+/* Highlighted "mode" badge */
+.teaching-card .mode-badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--card-background);
+    text-transform: capitalize;
+}
+
+/* Right side of the card with the logo */
+.teaching-card-logo {
+    flex-shrink: 0;
+}
+
+.teaching-card-logo a {
     display: block;
-    width: 120px;
-    height: 120px;
-    transition: transform 0.3s ease;
+    width: 80px;
+    height: 80px;
 }
 
-.university-logo-link:hover {
-    transform: scale(1.05);
-}
-
-.university-logo {
+.teaching-card-logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: contain;
     border: 2px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on the logo */
+.teaching-card-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .teaching-grid-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }

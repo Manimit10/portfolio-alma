@@ -1,12 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Function to calculate the duration in years
-    function getDuration(startYear) {
-        const currentYear = new Date().getFullYear();
-        const duration = currentYear - startYear;
-        return `${duration} years`;
-    }
-
-    // Function to fetch and process the teaching data
+    // Function to fetch and render the teaching data
     async function loadTeachingData() {
         try {
             const response = await fetch('teaching.json');
@@ -15,72 +8,48 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             const data = await response.json();
             
-            renderTeachingTable(data);
-            renderUniversityCards(data);
+            renderTeachingCards(data);
         } catch (error) {
             console.error("Could not load teaching data:", error);
         }
     }
 
-    // Function to render the teaching table
-    function renderTeachingTable(data) {
-        const tableBody = document.querySelector("#teaching-table tbody");
-        if (!tableBody) {
-            console.error("Teaching table body not found.");
+    // Function to render the teaching cards
+    function renderTeachingCards(data) {
+        const teachingGrid = document.getElementById("teaching-grid");
+        if (!teachingGrid) {
+            console.error("Teaching grid container not found.");
             return;
         }
 
+        // Loop through each item in the JSON data
         data.forEach(item => {
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td>${item.subject}</td>
-                <td>${item.startYear}</td>
-                <td>${getDuration(item.startYear)}</td>
-                <td>${item.country}</td>
-            `;
-            tableBody.appendChild(row);
-        });
-    }
-
-    // Function to render the university cards
-    function renderUniversityCards(data) {
-        const universitySection = document.getElementById("university-section");
-        if (!universitySection) {
-            console.error("University section not found.");
-            return;
-        }
-
-        // Get unique universities to avoid duplicates
-        const uniqueUniversities = data.reduce((unique, item) => {
-            if (!unique.some(uni => uni.universityName === item.universityName)) {
-                unique.push({
-                    name: item.universityName,
-                    link: item.universityLink,
-                    logo: item.universityLogo
-                });
-            }
-            return unique;
-        }, []);
-
-        const cardsContainer = document.createElement("div");
-        cardsContainer.className = "university-cards-grid";
-
-        uniqueUniversities.forEach(uni => {
             const card = document.createElement("div");
-            card.className = "university-card";
-            card.innerHTML = `
-                <h3>${uni.name}</h3>
-                <a href="${uni.link}" target="_blank" rel="noopener noreferrer" class="university-logo-link">
-                    <img src="${uni.logo}" alt="${uni.name} Logo" class="university-logo">
-                </a>
-            `;
-            cardsContainer.appendChild(card);
-        });
+            card.className = "teaching-card";
 
-        universitySection.appendChild(cardsContainer);
+            // Conditional HTML for the 'mode' field
+            const modeBadge = item.mode ? `<span class="mode-badge">${item.mode}</span>` : '';
+            
+            // Conditional HTML for the 'since year' text
+            const sinceText = item.startYear < new Date().getFullYear() ? `<p class="since-year">Since ${item.startYear}</p>` : '';
+
+            card.innerHTML = `
+                <div class="teaching-card-details">
+                    <h3 class="card-title">${item.universityName} ${modeBadge}</h3>
+                    <p class="card-subject">${item.subject}</p>
+                    ${sinceText}
+                </div>
+                <div class="teaching-card-logo">
+                    <a href="${item.universityLink}" target="_blank" rel="noopener noreferrer">
+                        <img src="${item.universityLogo}" alt="${item.universityName} Logo">
+                    </a>
+                </div>
+            `;
+
+            teachingGrid.appendChild(card);
+        });
     }
 
     // Load the data when the DOM is ready
     loadTeachingData();
 });
-

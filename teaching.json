@@ -3,6 +3,7 @@
     "subject": "Leadership",
     "startYear": 2025,
     "country": "North Macedonia",
+    "mode": "adjunct professor",
     "universityName": "University American College Skopje",
     "universityLink": "https://uacs.edu.mk",
     "universityLogo": "src/images/uacs.png"
@@ -11,6 +12,7 @@
     "subject": "Leadership",
     "startYear": 2025,
     "country": "United Arab Emirates",
+    "mode": "Online",
     "universityName": "National Academy Dubai",
     "universityLink": "https://nationalacademy.ae",
     "universityLogo": "src/images/nationalacademy.png"
@@ -19,6 +21,7 @@
     "subject": "Leadership",
     "startYear": 2024,
     "country": "USA",
+    "mode": "Online",
     "universityName": "Birchwood University",
     "universityLink": "https://birchwoodu.org",
     "universityLogo": "src/images/birchwood.png"
@@ -35,6 +38,7 @@
     "subject": "Leadership",
     "startYear": 2024,
     "country": "USA",
+    "mode": "Online",
     "universityName": "Careerera (Doctorate of Business Administration by EIMT)",
     "universityLink": "https://www.careerera.com",
     "universityLogo": "src/images/careerera.png"
@@ -43,6 +47,7 @@
     "subject": "Leadership",
     "startYear": 2024,
     "country": "USA",
+    "mode": "Online",
     "universityName": "Western State University (WSU)",
     "universityLink": "https://www.wsu.edu",
     "universityLogo": "src/images/wsu.png"
