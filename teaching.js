@@ -22,26 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Loop through each item in the JSON data
-        data.forEach(item => {
+        // Loop through each university entry in the JSON data
+        data.forEach(university => {
             const card = document.createElement("div");
             card.className = "teaching-card";
 
             // Conditional HTML for the 'mode' field
-            const modeBadge = item.mode ? `<span class="mode-badge">${item.mode}</span>` : '';
+            const modeBadge = university.mode ? `<span class="mode-badge">${university.mode}</span>` : '';
             
-            // Conditional HTML for the 'since year' text
-            const sinceText = item.startYear < new Date().getFullYear() ? `<p class="since-year">Since ${item.startYear}</p>` : '';
+            // Generate list of subjects for this university, handling the array
+            // The map function iterates over the subject array to create a new <p> tag for each subject
+            const subjectList = university.subject.map(subject => {
+                const sinceText = university.startYear < new Date().getFullYear() ? `<span class="since-year">Since ${university.startYear}</span>` : '';
+                // Each subject gets its own paragraph, ensuring it starts on a new line
+                return `<p class="card-subject">${subject} ${sinceText}</p>`;
+            }).join(''); // The join('') method ensures no commas are added between the paragraphs
 
             card.innerHTML = `
                 <div class="teaching-card-details">
-                    <h3 class="card-title">${item.universityName} ${modeBadge}</h3>
-                    <p class="card-subject">${item.subject}</p>
-                    ${sinceText}
+                    <h3 class="card-title">${university.universityName} ${modeBadge}</h3>
+                    ${subjectList}
                 </div>
                 <div class="teaching-card-logo">
-                    <a href="${item.universityLink}" target="_blank" rel="noopener noreferrer">
-                        <img src="${item.universityLogo}" alt="${item.universityName} Logo">
+                    <a href="${university.universityLink}" target="_blank" rel="noopener noreferrer">
+                        <img src="${university.universityLogo}" alt="${university.universityName} Logo">
                     </a>
                 </div>
             `;
