@@ -1,191 +1,123 @@
 [
   {
-    "subject": "Leadership",
-    "startYear": 2025,
-    "country": "North Macedonia",
-    "mode": "adjunct professor",
-    "universityName": "University American College Skopje",
-    "universityLink": "https://uacs.edu.mk",
-    "universityLogo": "src/images/uacs.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2025,
-    "country": "United Arab Emirates",
-    "mode": "Online",
-    "universityName": "National Academy Dubai",
-    "universityLink": "https://nationalacademy.ae",
-    "universityLogo": "src/images/nationalacademy.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2024,
-    "country": "USA",
-    "mode": "Online",
-    "universityName": "Birchwood University",
-    "universityLink": "https://birchwoodu.org",
-    "universityLogo": "src/images/birchwood.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2024,
-    "country": "Spain",
-    "universityName": "EU Business School",
-    "universityLink": "https://www.euruni.edu",
-    "universityLogo": "src/images/eubusiness.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2024,
-    "country": "USA",
-    "mode": "Online",
-    "universityName": "Careerera (Doctorate of Business Administration by EIMT)",
-    "universityLink": "https://www.careerera.com",
-    "universityLogo": "src/images/careerera.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2024,
-    "country": "USA",
-    "mode": "Online",
-    "universityName": "Western State University (WSU)",
-    "universityLink": "https://www.wsu.edu",
-    "universityLogo": "src/images/wsu.png"
-  },
-  {
-    "subject": "Leadership and Human Resource Management",
-    "startYear": 2023,
-    "country": "Spain",
-    "universityName": "eserp Business & Law School",
-    "universityLink": "https://es.eserp.com",
-    "universityLogo": "src/images/eserp.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2024,
-    "country": "Spain",
-    "universityName": "eserp Business & Law School - Supervisory Board",
-    "universityLink": "https://es.eserp.com",
-    "universityLogo": "src/images/eserp.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2022,
-    "country": "Spain",
-    "universityName": "United International Business Schools (UIBS)",
-    "universityLink": "https://www.uibs.org",
-    "universityLogo": "src/images/uibs.png"
-  },
-  {
-    "subject": "Leadership and Human Resource Management",
+    "subject": ["Business Psychology","Psychology - Analysis of Behaviour, Attitudes and Learning Difficulties"],
     "startYear": 2022,
     "country": "Spain",
     "universityName": "Universitat Internacional de Catalunya (UIC Barcelona)",
     "universityLink": "https://www.uic.es",
-    "universityLogo": "src/images/uic.png"
+    "universityLogo": "images/other-logos/UIC_Logo.png"
   },
   {
-    "subject": "Leadership",
-    "startYear": 2022,
+    "subject": ["International Marketing","International Negotiation","Games Theory: Market Behavior","Corporate and Institutional Public Relations"],
+    "startYear": 2023,
     "country": "Spain",
-    "universityName": "The Institute for Study Abroad (IFSA)",
-    "universityLink": "https://www.ifsa-butler.org",
-    "universityLogo": "src/images/ifsa.png"
+    "universityName": "ESERP Business & Law School",
+    "universityLink": "https://es.eserp.com",
+    "universityLogo": "images/other-logos/eserp-logo.png"
   },
   {
-    "subject": "Innovation In Business",
-    "startYear": 2021,
+    "subject": ["Innovation In Business","Entrepreneurship & Business Development","Responsible Management"],
+    "startYear": 2024,
     "country": "Spain",
-    "universityName": "Barcelona Executive Business School (BEBS)",
-    "universityLink": "https://www.bebs.org",
-    "universityLogo": "src/images/bebs.png"
+    "universityName": "EU Business School",
+    "universityLink": "https://www.euruni.edu",
+    "universityLogo": "images/other-logos/fb_empty.png"
   },
   {
-    "subject": "Organizational Change Management - Work Psychology",
-    "startYear": 2021,
-    "country": "Spain",
-    "universityName": "Barcelona Executive Business School (BEBS)",
-    "universityLink": "https://www.bebs.org",
-    "universityLogo": "src/images/bebs.png"
+  "subject": ["Personnel Recruitment and Selection","Consumer Behaviour","Crisis Management","Organizational Behavior","Human Resource Management- HR Psychology","Social Science Methods","Personnel Training and Development","Coaching","Human Resource Management and Organizational Behavior","Global Leadership Styles"],
+  "startYear": 2022,
+  "country": "Spain",
+  "universityName": "United International Business Schools (UIBS)",
+  "universityLink": "https://www.uibs.org",
+  "universityLogo": "images/other-logos/uibs-logo.png"
   },
   {
-    "subject": "Human Resource Management - HR Psychology",
-    "startYear": 2021,
-    "country": "Spain",
-    "universityName": "Barcelona Executive Business School (BEBS)",
-    "universityLink": "https://www.bebs.org",
-    "universityLogo": "src/images/bebs.png"
-  },
-  {
-    "subject": "International Marketing",
-    "startYear": 2021,
-    "country": "Spain",
-    "universityName": "Barcelona Executive Business School (BEBS)",
-    "universityLink": "https://www.bebs.org",
-    "universityLogo": "src/images/bebs.png"
-  },
-  {
-    "subject": "Consumer Behaviour",
-    "startYear": 2021,
-    "country": "Spain",
-    "universityName": "Barcelona Executive Business School (BEBS)",
-    "universityLink": "https://www.bebs.org",
-    "universityLogo": "src/images/bebs.png"
-  },
-  {
-    "subject": "Strategic Management",
-    "startYear": 2018,
-    "country": "Spain",
-    "universityName": "Castelldefels School of Social Sciences (C3S)",
-    "universityLink": "https://www.csss.es",
-    "universityLogo": "src/images/c3s.png"
-  },
-  {
-    "subject": "Sustainable Business Practices",
-    "startYear": 2018,
-    "country": "Spain",
-    "universityName": "Castelldefels School of Social Sciences (C3S)",
-    "universityLink": "https://www.csss.es",
-    "universityLogo": "src/images/c3s.png"
-  },
-  {
-    "subject": "Procurement Risk & Contract Management",
-    "startYear": 2018,
-    "country": "Spain",
-    "universityName": "Castelldefels School of Social Sciences (C3S)",
-    "universityLink": "https://www.csss.es",
-    "universityLogo": "src/images/c3s.png"
-  },
-  {
-    "subject": "Leadership and People Management",
-    "startYear": 2018,
-    "country": "Spain",
-    "universityName": "Castelldefels School of Social Sciences (C3S)",
-    "universityLink": "https://www.csss.es",
-    "universityLogo": "src/images/c3s.png"
-  },
-  {
-    "subject": "Leadership",
-    "startYear": 2018,
-    "country": "Spain",
-    "universityName": "Global Humanistic University (GHU)",
-    "universityLink": "https://www.ghu.edu.ai",
-    "universityLogo": "src/images/ghu.png"
-  },
-  {
-    "subject": "Research Methodology",
-    "startYear": 2009,
-    "country": "Iran",
-    "universityName": "Mahan Higher Education Institute",
-    "universityLink": "https://mahan.ac.ir",
-    "universityLogo": "src/images/mahan.png"
-  },
-  {
-    "subject": "Statistics",
-    "startYear": 2009,
-    "country": "Iran",
-    "universityName": "Mahan Higher Education Institute",
-    "universityLink": "https://mahan.ac.ir",
-    "universityLogo": "src/images/mahan.png"
-  }
+"subject": ["Psychology of Communication"],
+"startYear": 2025,
+"country": "North Macedonia",
+"mode": "adjunct professor",
+"universityName": "University American College Skopje",
+"universityLink": "https://uacs.edu.mk",
+"universityLogo": "images/other-logos/skopje.png"
+},
+{
+"subject": ["Counselling Psychology"],
+"startYear": 2025,
+"country": "United Arab Emirates",
+"mode": "Online",
+"universityName": "National Academy Dubai",
+"universityLink": "https://naisedu.com/",
+"universityLogo": "images/other-logos/HR-LOGO.png"
+},
+{
+"subject": ["Organizational Change Management- Work Psychology"],
+"startYear": 2024,
+"country": "USA",
+"mode": "Online",
+"universityName": "Birchwood University",
+"universityLink": "https://www.birchwoodu.org/",
+"universityLogo": "images/other-logos/brichwood-logo.png"
+},
+{
+"subject": ["Research Methodology"],
+"startYear": 2024,
+"country": "USA",
+"mode": "Online",
+"universityName": "Careerera (Doctorate of Business Administration by EIMT)",
+"universityLink": "https://www.careerera.com",
+"universityLogo": "images/other-logos/carrera-logo.png"
+},
+{
+"subject": ["Research Methodology","Child Psychology","Biological Foundation of Psychology"],
+"startYear": 2024,
+"country": "USA",
+"mode": "Online",
+"universityName": "Western State University (WSU)",
+"universityLink": "https://www.wsu.edu",
+"universityLogo": "images/other-logos/wsu-logo.png"
+},
+{
+"subject": ["Social Psychology"],
+"startYear": 2022,
+"country": "Spain",
+"universityName": "The Institute for Study Abroad (IFSA)",
+"universityLink": "https://www.ifsa-butler.org",
+"universityLogo": "images/other-logos/ifsa-logo.png"
+},
+{
+"subject": ["Leadership and Human Resource Management","Strategic Management in Human Resource"],
+"startYear": 2021,
+"country": "Spain",
+"universityName": "Barcelona Executive Business School (BEBS)",
+"universityLink": "https://www.bebs.org",
+"universityLogo": "images/other-logos/bebs-logo.png"
+},
+{
+"subject": ["Team Psychology"],
+"startYear": 2024,
+"country": "Cambodia",
+"mode": "adjunct professor",
+"universityName": "CamEd Business School",
+"universityLink": "https://cam-ed.edu.kh",
+"universityLogo": "images/other-logos/CamEd_Logo.png"
+},
+{
+"subject": [
+"Research and Academic Writing","Business Environment","Introduction to Business Communication","Academic And Professional Development","Project Management","Human Resource Management","Strategic Marketing","Customer Relationship Management","Operations Management","Marketing Management","Planning, Controlling and Leading a Project","Organizational Behavior in International","Leadership and People Management","Business Research Project","Sustainable Business Practices","Health and Social Care Leadership","Leading Change in Health and Social Care","Research Methodology","Sustainable Operations Management","Strategic Management","Strategic Leadership","International Tourism Policy and Development","Leadership and Human Resource Management","Process Management","Leadership and Team Management","Strategic Management in HR","Procurement Risk & Contract Mgmt."
+],
+"startYear": 2018,
+"country": "Spain",
+"universityName": "Castelldefels School of Social Sciences (C3S)",
+"universityLink": "https://www.csss.es",
+"universityLogo": "images/other-logos/c3s-logo.png"
+},
+{
+"subject": ["Process Management","Leadership and Management","Leadership and Team Management"],
+"startYear": 2018,
+"country": "Anguilla",
+"mode": "Online",
+"universityName": "Global Humanistic University (GHU)",
+"universityLink": "https://www.ghu.edu.ai",
+"universityLogo": "images/other-logos/ghu-logo.png"
+}
 ]

@@ -973,16 +973,15 @@ h1 {
     background-color: var(--background-color);
 }
 
-/* University Cards Section */
 /* ================================== */
 /* New Teaching Page Specific Styles */
 /* ================================== */
 
 /* Main grid container for the teaching cards */
 .teaching-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    /* Use CSS Columns to create a masonry-like layout */
+    column-count: 2;
+    column-gap: 2rem;
     padding: 2rem 0;
 }
 
@@ -997,6 +996,9 @@ h1 {
     justify-content: space-between;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* This is crucial for preventing cards from breaking across columns */
+    break-inside: avoid-column;
+    margin-bottom: 2rem; /* Add margin to separate cards in the column layout */
 }
 
 /* Hover effect on the card */
@@ -1076,6 +1078,6 @@ h1 {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .teaching-grid-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        column-count: 1; /* Single column on smaller screens */
     }
 }
