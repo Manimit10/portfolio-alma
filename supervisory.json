@@ -1,0 +1,40 @@
+[
+  {
+    "EducationalLevel": "Master",
+    "country": "Spain",
+    "universityName": "ESERP Business & Law School",
+    "universityLink": "https://es.eserp.com",
+    "universityLogo": "images/other-logos/eserp-logo.png"
+  },
+  {
+    "EducationalLevel": "Bachelor & Master",
+    "country": "Spain",
+    "universityName": "EU Business School",
+    "universityLink": "https://www.euruni.edu",
+    "universityLogo": "images/other-logos/fb_empty.png"
+  },
+  {
+  "subject": "Master & DBA",
+  "country": "Spain",
+  "universityName": "United International Business Schools (UIBS)",
+  "universityLink": "https://www.uibs.org",
+  "universityLogo": "images/other-logos/uibs-logo.png"
+  },
+{
+"subject": "DBA",
+"startYear": 2024,
+"country": "USA",
+"mode": "Online",
+"universityName": "Careerera (Doctorate of Business Administration by EIMT)",
+"universityLink": "https://www.careerera.com",
+"universityLogo": "images/other-logos/carrera-logo.png"
+},
+{
+"subject": "Master",
+"startYear": 2021,
+"country": "Spain",
+"universityName": "Barcelona Executive Business School (BEBS)",
+"universityLink": "https://www.bebs.org",
+"universityLogo": "images/other-logos/bebs-logo.png"
+}
+]

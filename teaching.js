@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const subjectList = university.subject.map(subject => {
                 const sinceText = university.startYear < new Date().getFullYear() ? `<span class="since-year">Since ${university.startYear}</span>` : '';
                 // Each subject gets its own paragraph, ensuring it starts on a new line
-                return `<p class="card-subject">${subject} ${sinceText}</p>`;
+                return `<p class="card-subject">${subject}</p>`;
             }).join(''); // The join('') method ensures no commas are added between the paragraphs
 
             card.innerHTML = `
